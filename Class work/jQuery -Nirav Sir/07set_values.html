@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 id="test">hello</h1>
+
+    <div id="d1">Div tag</div>
+
+    <p id="p1">p tag </p>
+
+    <a href="home.html"  id="a1">Home </a>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+
+
+    <input type="text" name=""  value="Input type text" id="i1">
+    <img src="x.jpg" alt="" height="100px" width="100px" id="img1">
+
+    <script>
+
+        // t = document.getElementById('test');
+        // t.value ="h1 tag"
+
+        // $('#test').text("Dhruv");
+        // $('div').text("TEST DIV");
+        // $('p').text("test PARA");
+        // $('a').text("DIPEN");
+
+         $('h1').html("Dhruv");
+         $('#d1').html('TEST DIV');
+         $('#p1').html('TEST para');
+         $('#a1').html('TEST LINK');
+
+        //  $('input').val("HELLO INP:UT");
+        $('input').attr('value',"Hello Dhruv")
+        $('img').attr("src",'y.jpg');
+
+        // $('a').attr("href","test_link.html")
+
+      img_tag = document.getElementById('img1')
+      a_tag = document.getElementById('a1')
+        console.log( img_tag);
+        console.log( a_tag)
+
+
+    </script>
+    
+</body>
+</html>

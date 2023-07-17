@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+    ul {
+        padding: 0;
+        list-style: none;
+        background: whitesmoke;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        /* line-height: 21px; */
+        text-align: right;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 20px;
+        color: black;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul.dropdown {
+        /* min-width: 100%;  */
+        background: white;
+        display: none;
+        position: absolute;
+        /* z-index: 999; */
+        /* left: 0; */
+    }
+    ul li:hover ul.dropdown {
+        display: block; 
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        
+        <li>
+            <a href="#">News</a>
+            <ul class="dropdown">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">LifeStyle</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Travel</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Entertainment </a>
+             <ul class="dropdown">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">LifeStyle</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Travel</a></li>
+            </ul>
+            
+        </li>
+        
+    </ul>
+    </html>
+</body>

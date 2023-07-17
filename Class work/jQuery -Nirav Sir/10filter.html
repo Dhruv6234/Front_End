@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <style>
+        p:first-child 
+        {
+            background-color: lightcoral;
+        }
+    </style> -->
+</head>
+<body>
+
+    <div>
+        <p class="x">P 1</p>
+        <p class="x"> P 2</p>
+
+        <p> P 3</p>
+
+        <p class="x"> P 4</p>
+    </div>
+
+    <button class="x">
+        FILTER
+    </button>
+
+    <button id="x">
+        NOT
+    </button>
+
+    <script>
+
+        // $('p').first().css("background","gray");
+
+        // $('p').last().css("background","green");
+
+        // $('p').eq(1).css("background","pink");
+        // $('p').eq(3).css("background","brown");
+
+        // $('p').eq(2).css("background","brown");
+
+
+        $('.x').click(function () {
+
+
+            $('p').not('.x').css("background","pink")
+        })
+
+        $('#x').click(function () {
+
+
+            $('p').filter('.x').css("background","gray")
+        })
+
+
+    </script>
+    
+</body>
+</html>

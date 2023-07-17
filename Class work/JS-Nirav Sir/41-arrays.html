@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Array: 
+    collection of multiple types of multiple values
+
+    Syntax:
+
+    var varName = [1,2,'er',"23423",true,false];
+
+        Araay index/key/position always starts with ZERO.
+
+        length of array = Total No if values stored
+
+        varName[0]= 1
+        varName[1]= 2
+        varName[2]= hi
+        varName[3]= hello
+        varName[4]= true
+         varName[5]= false
+
+
+
+
+
+-->
+
+        <script>
+
+            a = [34,45,"hi",'hello',true,false];
+
+            document.write(a);//34
+
+            document.write("<br>");
+            document.write(a[2]);
+            document.write("<br>");
+            document.write(a[0]);
+            document.write("<br>");
+            document.write(a[6]);
+            document.write("<br>");
+            document.write(a.length);
+            document.write("<br>");
+            document.write("<br>");
+
+
+            for(index=0;index<a.length;index++)
+            {
+
+                //document.write(index);//0 1 2 3 4 5
+
+                document.write("a[" );
+                document.write(index );
+                document.write("]" );
+
+                document.write(" => " );
+                document.write(a[index]);
+                document.write("<br>");
+            }
+
+
+
+
+        </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        div 
+        {
+            height: 200px;
+            width: 200px;
+            background: lightcoral;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+
+        button
+        {
+            margin-top: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <button>Animate Me</button>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis accusamus vel blanditiis eveniet impedit sit veniam minus enim aliquam a optio, voluptatem maxime dicta rerum eos omnis natus nemo.
+    </div>
+
+    
+
+    <script>
+
+        $('button').click(function () {
+
+            $('div').animate({"left":"0px","top":"100px"},"slow")
+        })
+
+        $('button').click(function () {
+
+            $('div').animate({"left":"0px","top":"0px"},"fast")
+        })
+
+
+    </script>
+    
+</body>
+</html>

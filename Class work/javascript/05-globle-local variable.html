@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello()
+        {
+            //local variable
+            var a = "Tops Tech";
+            console.log(a); //will work
+        }
+        hello();
+        // console.log(a); //will not work
+
+
+        //global variable
+        var v = 45
+        function MyFunc()
+        {
+            console.log(v);
+        }
+        MyFunc();
+        console.log(v);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript change image onclick event
+</title>
+<style type="text/css">
+	
+	#getImage {
+    width: 300px;
+    height: 300px;   
+	}
+	
+</style>
+</head>
+<body>
+	<div>
+		
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" id="getImage">
+    	
+    </div>
+    <div>
+    	<input type="button" onclick="imagefun()" value="Change Image">
+    </div>
+    <script>
+        function imagefun() {
+
+            var Image_Id = document.getElementById('getImage');
+
+
+
+            if (Image_Id.src.match("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg")) {
+                Image_Id.src = "https://media.istockphoto.com/id/1340642632/photo/sunflowers.jpg?b=1&s=170667a&w=0&k=20&c=9Ug32UnodYNOr9DGuLwVRk1WExt3D10xZjMe4ujgwp8=";
+
+               
+            }
+
+            else {
+                Image_Id.src ="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
+            }
+        }        
+    </script>
+
+</body>
+</html>

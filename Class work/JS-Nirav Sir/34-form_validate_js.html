@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .x 
+        {
+            height: 200px;
+            width: 300px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    name: <input type="text" id="nm" onblur="validateForm()">
+            <span id="nmErr"></span>
+    <br><br>
+    mobile: <input type="text" id="mb" onblur="validateForm()">
+    <span id="mbErr"></span>
+    
+    <br><br>
+   <!-- <input type="submit" onclick="validateForm()"><br><br> -->
+
+
+    <script>
+     
+        var name1 = document.getElementById('nm');
+        var mobile = document.getElementById('mb');
+        
+        var nmSpan = document.getElementById('nmErr');
+        var mbSpan = document.getElementById('mbErr');
+
+        
+
+        exp_nm = /^[a-zA-Z]+$/;
+       
+        // exp_mb =   /^[0-9]+$/;
+        // exp_mb =   /^[0-9]{4,5}$/;
+
+      exp_mb =   /^[0-9]{10}$/;    
+
+
+
+
+        function validateForm()
+        {
+            if(name1.value == "")
+            {
+                nmSpan.innerHTML = '* Name is required..!';
+                nmSpan.style.color ="red";
+                name1.style.border = "2px solid red";
+
+                return false;
+            }
+
+            else if(!exp_nm.test(name1.value))
+            {
+                alert('Only alphabets..!');
+            }
+
+            else
+            {
+                nmSpan.innerHTML = '';
+                name1.style.border = "2px solid green";
+            }
+
+        
+
+            if(mobile.value == "")
+            {
+                mbSpan.innerHTML = '* Mobile is required..!';
+                mbSpan.style.color ="red";
+                mobile.style.border = "2px solid red";
+                return false;
+            }
+
+            else if(!exp_mb.test(mobile.value))
+            {
+                alert("Only 10 digits");
+            }
+
+            else
+            {
+                mbSpan.innerHTML = '';
+                mobile.style.border = "2px solid green";
+            }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background-color: gray;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li{
+            display: inline-block;
+            position: relative;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px 25px;
+        }
+        ul li ul.droupdown{
+            display: none;
+            min-width: 100%;
+        }
+        ul li:hover{
+            background-color: black;
+        }
+        ul li:hover ul.droupdown{
+            display: block;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <ul class="main">
+        <li><a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Product</a>
+            <ul class="droupdown">
+                <li><a href="">Product</a></li>
+                <li><a href="">Product</a></li>
+            </ul>
+        </li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>

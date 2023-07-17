@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chk 
+        {
+            display: grid;
+            grid-template-columns: 31fr 31fr 31fr;
+            grid-template-rows: 200px 200px 200px;
+            border: 2px solid red;
+        }
+        .x 
+        {
+            border: 2px solid;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="chk">
+
+        <div class="x">1</div>
+        <div class="x">2</div>
+        <div class="x">3</div>
+
+        <div class="x">4</div>
+        <div class="x">5</div>
+        <div class="x">6</div>
+
+        <div class="x">7</div>
+        <div class="x">8</div>
+        <div class="x">9</div>
+
+    </div>
+
+    <script>
+       
+       div_arr = document.getElementsByClassName('x');
+
+       console.log(div_arr)
+
+       x=44;
+
+       if(x%2 == 0)
+       {
+            document.write("even")
+       }
+
+       else
+       {
+        document.write("odd")
+       }
+
+        for(index=0;index<div_arr.length;index++)// 3 ; 3< 9 ;3++
+        {
+
+            if(index%2 ==0)
+             {
+                    div_arr[index].style.background ="blue";
+             }
+
+             else{
+                div_arr[index].style.background ="red";
+             }
+            
+    
+         }
+
+
+    </script>
+
+
+    
+</body>
+</html>5

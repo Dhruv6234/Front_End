@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Gender:
+    <input type="radio" id="t1" name="q" class="x"> Male 
+    <input type="radio" id="t2" name="q" class="x"> Female 
+
+    <br>
+
+    Labguages:
+    <input type="checkbox" > Gujarati 
+    <input type="checkbox"> Hindi
+    <input type="checkbox"> English 
+    
+    <input type="submit" onclick="validate()"> 
+
+    <script>
+
+        gen_arr = document.getElementsByName('q');
+        console.log(gen_arr)
+
+        console.log(gen_arr[0]);
+        console.log(gen_arr[1]);
+        console.log(gen_arr[0].checked)
+
+        function validate()
+        {
+            if(gen_arr[0].checked == false && gen_arr[1].checked == false)
+            {
+                alert("Select gender...!");
+            }
+        }
+
+      
+    </script>
+</body>
+</html>

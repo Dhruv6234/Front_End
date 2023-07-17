@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button
+        {
+            position: absolute;
+            top:50%;
+            right:10%;
+            border: none;
+            /* padding: 30px; */
+            font-size: 25px;
+            font-weight: bold;
+            height: 50px;
+            width:50px;
+            background: transparent;
+
+            box-shadow: 0 0 20px #fff inset;
+            border-radius: 4px;
+        }
+
+        .parent 
+        {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+
+    <img src="i1.jpg" alt="" height="600px" width="100%" id="i">
+
+    <button onclick="changeImages()"> > </button>
+    </div>
+
+    <script>
+
+           img_tag =  document.getElementById('i');
+          
+           function changeImages()
+           {
+           // img_tag.src="i2.jfif";
+
+           console.log(img_tag.src)
+
+            // if( img_tag.src == "file:///C:/Users/Tops/Downloads/i1.jpg")
+            // {
+            //     img_tag.src="file:///C:/Users/Tops/Downloads/i2.jfif";
+            // }
+            // else
+            // {
+            //     img_tag.src="file:///C:/Users/Tops/Downloads/i1.jpg";
+            // }
+
+
+            if( img_tag.src.match("i1.jpg") )
+            {
+                img_tag.src="i2.jfif";
+            }
+            else if(img_tag.src.match("i2.jfif"))
+            {
+                img_tag.src="i3.jpg";
+            }
+            else if(img_tag.src.match("i3.jpg"))
+            {
+                img_tag.src="i4.jpg";
+            }
+            else if(img_tag.src.match("i4.jpg"))
+            {
+                img_tag.src="i5.jpeg";
+            }
+           
+            else
+            {
+                img_tag.src="i1.jpg";
+            }
+           }
+        
+
+
+        //    all slider image is on g-drive ;)
+    </script>
+    
+</body>
+</html>

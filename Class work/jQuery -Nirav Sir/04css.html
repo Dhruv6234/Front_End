@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
+
+    <script src="04ext.js"></script>
+
+    <style>
+        .xyz 
+        {
+            color:blue;
+            background-color: coral;
+            font-size: 25px;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <p id="para" class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam iure tenetur sint beatae et, incidunt ipsum, magnam sequi optio ipsa odio animi officiis, recusandae modi? Quo exercitationem adipisci molestias?
+    </p>
+
+    <button id="b1" >Add CSS</button>
+    <button id="b2">Remove CSS</button>
+    <button class="b1">Add/Remove</button>
+
+
+    <script>
+
+        // $('tagName'/".className"/'#idName').css("property","value");
+
+      // $('p').css("color","blue")
+
+       $('#b1').click(function (){
+
+        // $('p').css("color","blue");
+        // $('p').css("background","coral");
+        // $('p').css("font-size","25px");
+
+         $('p').addClass('xyz')
+
+        // $('p').css({"color":"blue","background":"coral","font-size":"25px"});
+
+       })
+
+
+    //   p1 =  document.getElementById('para')
+
+    //   p1.classList.add('xyz') 
+    // $('p').addClass('xyz')
+
+
+    $('#b2').click(function () {
+
+        $('p').removeClass('xyz');
+    })
+
+    $('.b1').click(function () {
+
+        $('p').toggleClass('xyz');
+    })
+
+   
+
+
+    </script>
+    
+</body>
+</html>

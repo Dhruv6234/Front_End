@@ -1,0 +1,60 @@
+{
+  "details": [
+    {
+      "id": 1,
+      "name": "Vishal Rajpal",
+      "email": "Dhruv@gmail.com",
+      "phone": 9137133100,
+      "country": "USA"
+    },
+    {
+      "id": 1,
+      "name": "Vishal Rajpal",
+      "email": "Dhruv@gmail.com",
+      "phone": 9137133100,
+      "country": "USA"
+    },
+    {
+      "id": 1,
+      "name": "Vishal Rajpal",
+      "email": "Dhruv@gmail.com",
+      "phone": 9137133100,
+      "country": "USA"
+    },
+    {
+      "name": "kkhi;auf",
+      "email": "iusugfi@gmail.com",
+      "phone": "35207453087456",
+      "country": "ind",
+      "id": 2
+    },
+    {
+      "name": "kkhi;auf",
+      "email": "iusugfi@gmail.com",
+      "phone": "35207453087456",
+      "country": "ind",
+      "id": 3
+    },
+    {
+      "name": "Dhruv",
+      "email": "123@gmail.com",
+      "phone": "494651684654",
+      "country": "Ind",
+      "id": 4
+    },
+    {
+      "name": "ahg;iua",
+      "email": "kajhg",
+      "phone": "eeruh",
+      "country": "e;ir",
+      "id": 6
+    },
+    {
+      "name": "ahg;iua",
+      "email": "kajhg",
+      "phone": "eeruh",
+      "country": "e;ir",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    num1: <input type="text" id="num1"> <br><br>
+    num2: <input type="text" id="num2"> <br><br>
+
+    <h2 id="res"></h2>
+
+    <button onclick="addition()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button>
+
+    <script>
+
+           var n1=  document.getElementById('num1');
+           var n2=  document.getElementById('num2');
+           var result=  document.getElementById('res');
+
+           console.log(n1)
+           console.log(n1.value);
+
+            //n1.value + n2.value
+
+          //  Nan : Not a  Number ERROR
+        function addition()
+        {
+            result.innerHTML = parseInt(n1.value)  + parseInt(n2.value);
+        }
+
+        function sub()
+        {
+            result.innerHTML = parseInt(n1.value)  - parseInt(n2.value);
+        }
+
+        function mul()
+        {
+            result.innerHTML = parseInt(n1.value)  * parseInt(n2.value)
+        }
+
+        function div()
+        {
+            result.innerHTML = parseInt(n1.value)  / parseInt(n2.value);
+        }
+
+        function mod()
+        {
+            result.innerHTML = parseInt(n1.value)  % parseInt(n2.value);
+        }
+
+        
+    </script>
+    
+</body>
+</html>

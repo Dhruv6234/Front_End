@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // function : block of code
+    function Test()
+    {
+        console.log("This is Test method");
+    }
+    Test();
+
+    //with para
+    function student(Name,age)
+    {
+        console.log("Name is "+Name);
+        console.log("Age is "+age);
+    }
+    student("John",15)
+
+    //default para
+    function Person(country="India")
+    {
+        console.log("My country name is "+country);
+    }
+    // Person();
+    // Person("UK")
+    Person(null)
+
+    //return
+    function Addition(num1,num2)
+    {
+        let sum = num1+num2
+        return sum;
+    }
+    console.log("Addtion is "+Addition(2,3));
+</script>

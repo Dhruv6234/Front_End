@@ -1,0 +1,39 @@
+<script>
+    function demo()
+    {
+        console.log("this is demo function");
+    }
+    demo();
+
+    //function with para
+
+    function Name(fname,lname)
+    {
+        console.log("my first name is "+fname);
+        console.log("my last name is "+lname);
+    }
+    Name("dhruv", "prajapati");
+
+
+    //default function
+
+    function test(country ="india")
+    {
+        console.log("my country name is "+country);
+    }
+    test();
+    test("canada")
+
+    //function with multipliction
+    function getdata(number)
+    {
+        console.log(number*number*number);
+    }
+    getdata(5);
+
+    //function object
+
+    var add = new Function("a","b","return a+b");
+    console.log(add(5,5));
+
+</script>

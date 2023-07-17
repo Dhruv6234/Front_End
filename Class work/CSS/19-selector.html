@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>types of selectors</title>
+    <style>
+        /* universal selector */
+        *{
+            font-size: 30PX ;
+            font-weight: bold;
+        }
+        /* decendent selector */
+        div.one ul li a{
+            text-decoration: none;
+        }
+        /* child selector */
+        ul > li{
+            color: red;
+        }
+        /* adjacent sibling selector */
+        h1+p{
+            background-color: yellow;
+        }
+        /* general sibling selector */
+        h1~p{
+            color: red;
+        }
+        /* grouping selector */
+        p,h1,span{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>this is a para</p>
+    <h1>have a nice day</h1>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <span>this is a span tag</span>
+    <p>this is a para</p>
+    <div class="one">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+    </div>
+    <div class="two">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+        
+    </div>
+    
+</body>
+</html>

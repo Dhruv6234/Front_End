@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<form onsubmit="return validateForm()">
+	Name : <input type="text" name="" id="nm"> <span id="nmErr"></span> <br><br>
+	Email : <input type="text" name="" id="em"> <br><br>
+	Mobile : <input type="text" name="" id="mb"> <br><br>
+
+	<!-- <input type="submit" name="" onclick="return validateForm()"> <br><br> -->
+
+	<input type="submit" name="">
+
+</form>
+
+	<script type="text/javascript">
+
+		name1 = document.getElementById('nm');
+		email = document.getElementById('em');
+		mobile = document.getElementById('mb');
+		nmSpan = document.getElementById('nmErr');
+
+
+		console.log(name1);
+		console.log(name1.value);
+
+		// nmSpan.innerHTML = "* Name is required..!";
+		// nmSpan.style.color ="red";
+
+		
+		
+		function validateForm()
+		{
+
+
+			if(name1.value == "")
+			{
+				//alert("name required...!");
+					nmSpan.innerHTML = "* Name is required..!";
+					nmSpan.style.color ="red";
+				name1.style.border = "2px solid red";
+				return false;
+			}
+			else
+			{
+				name1.style.border = "2px solid green";
+				nmSpan.innerHTML = "";
+					
+			}
+
+			if(email.value == "")
+			{
+				alert("email required...!");
+				return false;
+			}
+
+
+			if(mobile.value == "")
+			{
+				alert("mobile required...!");
+				return false;
+			}
+
+
+		
+		}
+
+
+
+	</script>
+
+</body>
+</html>

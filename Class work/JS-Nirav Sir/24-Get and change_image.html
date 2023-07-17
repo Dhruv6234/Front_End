@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <img id="i1" src="" alt="" height="100px" width="200px" class="x">
+
+    <img id="i2" src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="" height="100px" width="200px" class="y">
+    
+    <button onclick="getImage()">Get Image</button>
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+          var img1 =  document.getElementById('i1');
+          var img2 =  document.getElementById('i2');
+          console.log(img1);
+
+            function getImage()
+            {
+                img1.src = "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg";
+            }
+
+            function changeImage()
+            {
+                img2.src = "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg";
+
+            }
+    </script>
+</body>
+</html>

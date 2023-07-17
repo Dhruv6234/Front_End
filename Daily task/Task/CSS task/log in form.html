@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-form</title>
+    <style>
+        body{
+            background-image:url(https://wallpaperbat.com/img/360433-professional-web-design-services-server-experts.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .loginbox{
+            width: 400px;
+            height: 500px;
+            border: 5px solid  rgba(255, 255, 255, 0.575);
+            box-sizing: border-box;
+            top: 80px;
+            left: 100px;
+            position: absolute;
+            background-color: black;
+        }
+        .avtar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: 35%;
+            top: 20px;
+            background: transparent;
+            top: -50px;
+            left: calc(50% - 50px); 
+        }
+        h1{
+            margin-top: 80px;
+            text-align: center;
+            color: rgba(143, 188, 234, 0.606);
+            font-size: 30px;
+        }
+        .loginbox p {
+            color: rgba(143, 188, 234, 0.606);
+            font-size: 25px ; 
+            font-weight: bold;
+            margin: 0px;
+            margin-left: 16px;
+        }
+        .loginbox input{
+            width: 80%;
+            margin-bottom: 20px;
+            margin: 10px;
+        }
+        .loginbox input[type="text" ], [type="Password"]{
+           background: transparent;
+           font-size: 20px;
+           border-radius: 10px;
+           height: 30px;
+           font-size: 17px;
+           color: white; 
+        }
+        .loginbox input[type="submit"]{
+            border: none;
+            border: 1px solid white;
+            border-radius: 20px;
+            height: 30px;
+            color:rgba(143, 188, 234, 0.606);
+            font-weight: bold;
+            background: transparent;
+            font-size: 20px;
+            cursor: pointer;   
+        }
+        .loginbox a{
+            text-decoration: none;
+            color: darkgrey;
+            font-size: 17px;
+            text-align: center;
+            margin: 100px;
+        }
+        .loginbox a:hover{
+            color: rgb(233, 217, 217);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="https://p.kindpng.com/picc/s/78-785827_user-profile-avatar-login-account-male-user-icon.png" alt="" class="avtar">
+        <h1>Login here</h1>
+        <form action="#" method="post" name="loginform">
+            <p>User Name</p>
+            <input type="text" name="Username" placeholder="Enter Username" >
+            <p>Password</p>
+            <input type="password" name="Password" placeholder="Enter Password" ><br>
+            <input type="submit" name="Login" id="" value="Login"><br>
+            <a href="#">Forgot password?</a><br>
+            <a href="#">Don't have an account</a>
+        </form>
+    </div>
+</body>
+</html>

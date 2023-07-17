@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <h1 id="z sdrt">wed</h1>
+    <p  id="z">sdfs</p> -->
+
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/01/shutterstock_391535467.jpg" alt="" height="500px" width="100%" id="i1" class="x">
+
+    <img src="https://www.intrepidtravel.com/adventures/wp-content/uploads/2015/02/Intrepid-Travel-Chile-Patagonia-trekking-002.jpg" alt="" height="500px" width="100%" id="i1" class="x">
+
+    <img src="https://airlinestime.com/wp-content/uploads/2021/03/cover-for-Trekking-In-Kathmandu-e1582960550667.jpg" alt="" height="500px" width="100%" id="i1" class="x">
+
+    <img src="https://www.seawatersports.com/img/newimage/activies/slide/trekking-in-the-himalayas-trekking-in-uttar-pradesh-price.jpg" alt="" height="500px" width="100%" id="i1" class="x">
+
+    <script>        
+
+var images =  document.getElementsByTagName('img');
+    //    var images =  document.getElementsByClassName('x');
+       console.log(images);
+
+       key =0;
+
+
+      function test()
+      {
+        for(x=0;x<images.length;x++)
+       {
+            images[x].style.display = "none";
+       }
+
+       images[key].style.display = "block";
+
+       key++;
+       if(key==4)
+       {
+        key =0;
+       }
+
+        setTimeout('test()',1000)
+      }
+
+        test();
+      
+
+
+        
+
+    </script>
+    
+</body>
+</html>

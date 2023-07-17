@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //call method
+
+        function EMP(id,name)
+        {
+            this.id = id;
+            this.name= name;
+        }
+        function NewEmp(id, name)
+        {
+            EMP.call(this,id,name);
+        }
+        var data=new NewEmp(01, "tops tech");
+        console.log(data.name);
+        console.log(data.id);
+
+
+        //apply method
+        var x=[4,6,8,2]
+        console.log(x);
+        var z = Math.max.apply(null,x);
+        console.log(z);
+
+
+        //bind method
+
+        var website = {
+            name: "tops technologies",
+            getName : function(){
+                return this.name;
+            }
+        }
+
+        // console.log(website.name);
+        var a = website.getName;
+        var b = a.bind(website);
+        console.log(b());
+
+
+        //tostring method
+
+        function test(t,u)
+        {
+            return t+u
+        }
+        var data = test(10,20);
+        console.log(data);
+        console.log(data.toString());
+    </script>
+</body>
+</html>

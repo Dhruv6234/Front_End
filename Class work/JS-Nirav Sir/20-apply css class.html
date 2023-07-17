@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.z 
+		{
+			height: 200px;
+			width: 200px;
+			background: linear-gradient(red,blue);
+			font-size: 45px;
+			font-family: cursive;
+			font-weight: bolder;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div id="d">
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		var div = document.getElementById('d');
+
+		div.classList.add('z');
+		div.classList.remove('z');
+		div.classList.add('z');
+		div.classList.toggle('z');
+
+	</script>
+
+</body>
+</html>

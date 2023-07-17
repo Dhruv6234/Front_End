@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style type="text/css">
+        .calculator {
+            width: 400px;
+            height:300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.204);
+        }
+
+        .display {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 50px;
+        }
+
+        .display input[type="text"] {
+            width: 100%;
+            border: none;
+            font-size: 2em;
+            text-align: right;
+        }
+
+        .keys button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.5em;
+            margin: 5px;
+            cursor: pointer;
+            background-color: coral;
+        }
+
+        .keys button:active {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator" >
+        <div class="display">
+            <input style="background-color:black; color: white;" type="text" id="result" readonly>
+        </div>
+        <div class="keys">
+            <button style="background-color:coral;" onclick="clearScreen()">C</button>
+            <button style="background-color:coral;" onclick="backspace()">&larr;</button>
+            <button style="background-color:coral;" onclick="insert('+')">+</button>
+            <button style="background-color:coral;" onclick="insert('-')">-</button>
+            <button style="background-color:coral;" onclick="insert('*')">&times;</button>
+            <button style="background-color:coral;" onclick="insert('/')">&divide;</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('.')">.</button>
+            <button style="background-color:white;" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script>
+
+        function clearScreen() {
+            document.getElementById('result').value = '';
+        }
+
+        function backspace() {
+            let value = document.getElementById('result').value;
+            document.getElementById('result').value = value.substr(0, value.length - 1);
+        }
+
+        function insert(char) {
+            document.getElementById('result').value += char;
+        }
+
+        function calculate() {
+            let expression = document.getElementById('result').value;
+            let result = eval(expression);
+            document.getElementById('result').value = result;
+        }
+
+
+    </script>
+</body>
+
+</html>

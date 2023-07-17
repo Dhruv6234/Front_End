@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.mynav{
+    background-color: #05203c;
+}
+img{
+    max-width: 100%;
+}
+.menu i{
+    color: white;
+    font-size: 20px;
+    
+}
+.menu span {
+    color: white;
+}
+.search h2{
+    color: white;
+}
+.from-input1{
+    height: 70px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    width: 230px;
+}
+.from-input2{
+    height: 70px;
+    border: none;
+   
+}
+.from-input3{
+    height: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    width: 230px;
+   
+}
+.inner-seacrch button
+{
+    height: 70px;
+    background-color: #0062e3;
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 100px;
+    border-radius: 20px;
+}
+.explore button{
+    border-radius: 20px;
+    background-color: #05203c;
+  border: none;
+    width: 100%;
+    font-size: 17px;
+}
+.explore button i{
+    font-size: 17px;
+}
+.hotel-rounded{
+border-radius: 20px;
+}
+
+.one{
+    box-shadow: 1px 1px 7px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 32%;
+    margin: 5px;
+    float: left;
+}
+.footer{
+    background-color: #05203c;
+    color: white;
+}
+.footer button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    padding: 0px 10px 0px 10px
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/* help css */
+.logo img{
+    width: 200px;
+}
+
+.bghelp{
+    background: url('D:/project/public/img/bg.jpg');
+    background-size: cover;
+    height: 370px;
+}
+.myinpt{
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bghelp button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00a698;
+    color: white;
+    width: 150px;
+    border: 0px;
+}
+.article{
+    background-color: #f1f2f8;
+}
+.article img{
+    width: 250px;
+}
+.article h3{
+    color: #00a698;
+}
+

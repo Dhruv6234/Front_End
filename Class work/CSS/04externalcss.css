@@ -1,0 +1,19 @@
+p{
+    color: blueviolet;
+    background-color: beige;
+}
+h5{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+   color: chartreuse;
+   text-align: center;
+   text-decoration: overline;
+   /*text-decoration: line-through;*/
+   /*text-transform: capitalize;*/
+   /*text-transform: lowercase;*/
+   text-transform: uppercase;
+   }
+    a{
+    text-decoration: none;
+   }

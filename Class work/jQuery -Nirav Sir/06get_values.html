@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Hello</h1>
+    <p>para</p>
+    <div>div tag</div>
+    <a href="h.html">Link tag</a>
+
+    <input type="text" value="hello INput">
+    <img src="x.jpg" alt="" height="100px" width="100px">
+
+    <script>
+
+          //closing tag ==> we use .text & .html method
+
+        // alert($('h1').text())   
+        // alert($('p').text())
+        // alert($('div').text())
+        // alert($('a').text())
+
+        alert($('h1').html())
+        alert($('p').html())
+        alert($('div').html())
+        alert($('a').html())
+        // alert($('input').val())
+
+
+
+        //non closing tag ==> we use .attr method
+
+        
+        alert($('input').attr("value"))
+        alert($('input').attr("type"))
+
+        alert($('img').attr("src"))
+    </script>
+    
+</body>
+</html>

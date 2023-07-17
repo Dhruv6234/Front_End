@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            /* width: 50%; */
+            background-color: aqua;
+            height: 400px;
+        }
+        .two{
+            /* width: 50%; */
+            background-color: blueviolet;
+            height: 400px;
+        }
+        .container{
+            display: flex;
+        }
+        @media only screen and (min-width:320px) {
+            .container{
+                display: block;
+            }
+            .one{
+                width: 100%;
+            }
+            .two{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width:600px) {
+            .conntainer{
+                display: block;
+            }
+            .one{
+                width: 100%;
+            }
+            .two{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width:768px) {
+            .container{
+                display: flex;
+            }
+            .one{
+                width: 50%;
+            }
+            .two{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

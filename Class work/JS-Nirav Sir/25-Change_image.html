@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cum? Error aspernatur fugit quis blanditiis ratione officia placeat. Officia cum deserunt sapiente, nam magnam dolorem nesciunt soluta. In, soluta doloremque.
+    </p>
+
+    <button>Hide</button>
+    <button>Show</button>
+    <button>Hide/Show</button>
+    
+    <img src="https://tinypng.com/images/social/website.jpg" alt="" id="i1" height="200px" width="400px">
+    <img src="https://my.alfred.edu/zoom/_images/foster-lake.jpg" alt="" srcset="" id="i2" height="200px" width="400px">
+
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+
+
+    var img1 = document.getElementById('i1');
+    var img2 = document.getElementById9('i2');
+
+    function changeImage()
+        {
+            if(img1.src.match('images/i1.jpg') )
+            {
+                img1.src ="images/i2.jpg";
+            }
+
+            else
+            {
+                img1.src ="images/i1.jpg"
+            }
+        }
+
+    //console.log(img1.src)
+        // function changeImage()
+        // {
+        //     if(img1.src == "http://127.0.0.1:5500/images/i1.jpg")
+        //     {
+        //         img1.src ="http://127.0.0.1:5500/images/i2.jpg";
+        //     }
+
+        //     else
+        //     {
+        //         img1.src ="http://127.0.0.1:5500/images/i1.jpg"
+        //     }
+        // }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .q
+        {
+            background:coral;
+            border: 3px solid;
+        }
+
+        .a 
+        {
+            background:coral;
+            border: 3px solid;
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="q">Questions?</div>
+    <div class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur eveniet, est fugiat officia ducimus ullam quisquam tempora sunt sint eius! Odit asperiores porro mollitia aliquam magnam facilis. Magnam, nulla.</div>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            // $('.q').click(function(){
+            //     $('.a').slideDown();
+            // })
+
+            // $('.q').click(function(){
+            //     $('.a').slideUp();
+            // })
+
+            $('.q').click(function(){
+                $('.a').slideToggle();
+            })
+
+
+
+
+
+
+
+        })
+
+    </script>
+</body>
+</html>
